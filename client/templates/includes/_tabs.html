@@ -1,17 +1,13 @@
 <template name="_tabs">
     {{#if isAndroid}}
         {{#ionTabs style="android"}}
-            {{> ionTab title="Calendar" path="listeners" icon="android-search"}}
-            {{> ionTab title="Accounts" path="messages" icon="android-chat"}}
-            {{> ionTab title="Budgets" path="account" icon="android-person"}}
-            {{> ionTab title="Charts" path="account" icon="android-person"}}
+            {{> ionTab title="Home" path="homepage" icon="android-home"}}
+            {{> ionTab title="Others" path="others" icon="android-more-horizontal"}}
         {{/ionTabs}}
     {{else}}
         {{#ionTabs style="ios"}}
-            {{> ionTab title="Calendar" path="listeners" iconOff="ios-search" iconOn="ios-search" class="tab-item-balanced"}}
-            {{> ionTab title="Accounts" path="messages" iconOff="chatboxes" iconOn="chatboxes" class="tab-item-balanced"}}
-            {{> ionTab title="Budgets" path="account" iconOff="ios-person-outline" iconOn="ios-person" class="tab-item-balanced"}}
-            {{> ionTab title="Charts" path="account" iconOff="ios-person-outline" iconOn="ios-person" class="tab-item-balanced"}}
+            {{> ionTab title="Home" path="homepage" iconOff="ios-home-outline" iconOn="ios-home" class="tab-item-assertive"}}
+            {{> ionTab title="Others" path="others" iconOff="ios-more-outline" iconOn="ios-more" class="tab-item-assertive"}}
         {{/ionTabs}}
     {{/if}}
 </template>
