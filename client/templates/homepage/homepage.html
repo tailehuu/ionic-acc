@@ -1,3 +1,13 @@
-<template name="home">
-    <h1>welcome to homepage</h1>
+<template name="homepage">
+    {{#ionView}}
+        {{#contentFor "headerTitle"}}
+            <h1 class="title">Home</h1>
+        {{/contentFor}}
+
+        {{#ionContent}}
+            <p>
+                Welcome to homepage
+            </p>
+        {{/ionContent}}
+    {{/ionView}}
 </template>

@@ -1,3 +1,11 @@
 <template name="layout">
-    {{> yield}}
+    {{#ionBody}}
+        {{> ionNavBar}}
+
+        {{#ionNavView}}
+            {{> yield}}
+        {{/ionNavView}}
+
+        {{> _tabs }}
+    {{/ionBody}}
 </template>
