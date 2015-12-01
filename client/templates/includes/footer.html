@@ -2,11 +2,13 @@
     {{#if isAndroid}}
         {{#ionTabs style="android"}}
             {{> ionTab title="Home" path="home" icon="android-home"}}
+            {{> ionTab title="Others" path="home" icon="android-add"}}
             {{> ionTab title="Private" path="private" icon="android-locked"}}
         {{/ionTabs}}
     {{else}}
         {{#ionTabs style="ios"}}
             {{> ionTab title="Home" path="home" iconOff="ios-home-outline" iconOn="ios-home" class="tab-item-assertive"}}
+            {{> ionTab title="Others" path="others" iconOff="ios-plus-outline" iconOn="ios-plus-empty" class="tab-item-assertive"}}
             {{> ionTab title="Private" path="private" iconOff="ios-locked-outline" iconOn="ios-locked" class="tab-item-assertive"}}
         {{/ionTabs}}
     {{/if}}
