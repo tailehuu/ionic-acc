@@ -1,0 +1,13 @@
+<template name="footer">
+    {{#if isAndroid}}
+        {{#ionTabs style="android"}}
+            {{> ionTab title="Home" path="home" icon="android-home"}}
+            {{> ionTab title="Private" path="private" icon="android-locked"}}
+        {{/ionTabs}}
+    {{else}}
+        {{#ionTabs style="ios"}}
+            {{> ionTab title="Home" path="home" iconOff="ios-home-outline" iconOn="ios-home" class="tab-item-assertive"}}
+            {{> ionTab title="Private" path="private" iconOff="ios-locked-outline" iconOn="ios-locked" class="tab-item-assertive"}}
+        {{/ionTabs}}
+    {{/if}}
+</template>

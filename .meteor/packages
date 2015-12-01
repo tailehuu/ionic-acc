@@ -19,7 +19,13 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
 iron:router
-meteoric:ionic
+accounts-password
+useraccounts:ionic
+accounts-google
+service-configuration
+zimme:active-route
+useraccounts:iron-routing
 fourseven:scss@2.0.0
-meteoric:ionic-sass
 meteoric:ionicons-sass
+meteoric:ionic-sass
+meteoric:ionic

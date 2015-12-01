@@ -1,12 +1,13 @@
-<template name="homepage">
+<template name="home">
     {{#ionView}}
         {{#contentFor "headerTitle"}}
             <h1 class="title">Home</h1>
+            {{> atNavButton}}
         {{/contentFor}}
 
         {{#ionContent class="padding"}}
             <p>
-                Welcome to ionic-acc!
+                Welcome to home page!
             </p>
         {{/ionContent}}
     {{/ionView}}
